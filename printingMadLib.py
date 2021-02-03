@@ -54,3 +54,7 @@ print("In this rapidly " + euphemistic_gerund + " world of ours, it's hard to fi
 print(startup_name + " changes that. It puts the power of " + invasive_service + " at your fingertips. " + serious_verb + ".\n")
 
 print(fun_verb + ". " + verb_startup + ".\n")
+
+print("Mad Libs: Startup Pitch by John Lopez")
+print("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bloomberg.com%2Fnews%2Farticles%2F2012-04-26%2Fmad-libs-startup-pitch&psig=AOvVaw2AaueDTgReXwmTDtqwy4ll&ust=1612405964019000&source=images&cd=vfe&ved=0CAMQjB1qFwoTCIiN07bWzO4CFQAAAAAdAAAAABAD")
+
