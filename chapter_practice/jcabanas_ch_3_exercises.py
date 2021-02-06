@@ -37,7 +37,6 @@ print(a, 'not =', c, ':', a != c)
 
 # 4
 print(b, '<=', c, ':', b <= c)
-print(format(800000, ',.2f'))
 
 # TODO 3.2 the if else statement
 print("=" * 10, "Section 3.2 if-else", "=" * 10)
@@ -61,7 +60,7 @@ print("=" * 10, "Section 3.3 comparing strings", "=" * 10)
 # it will display "that is correct" otherwise display "that is not correct"
 password = "narwhals"
 user_password = input("Please enter the password:  ")
-if password == input:
+if password == user_password:
     print('that is correct')
 else:
     print('that is not correct')
@@ -127,22 +126,12 @@ d = 10
 e = 10
 f = 12
 
-if d < 11 and e < 11:
-    print(d, '< 11 and ', e, '< 11 ')
-    print ('d = ', d)
-    print ('e = ', e)
-elif f < 11 or e < 11:
-    print(f, '< 11 or ', e, '< 11 ' )
-    print('f = ', f)
-    print('e = ', e)
-elif not (f == 10):
-    print(f, 'not == 10')
-    print('f =', f)
-else:
-    print('e = ', e)
-    print('f = ', f)
-    print('d = ', d)
-
+# 1)
+print(d < 11 and e < 11)
+# 2)
+print(f < 11 or e < 11)
+# 3)
+print(f != 10)
 
 
 # TODO 3.6 Boolean variable
