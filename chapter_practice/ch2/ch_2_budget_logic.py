@@ -12,7 +12,7 @@ phone = float(input('How much do you spend on your phone bill each month?: $'))
 utilities = float(input('How much do you spend on your utilities each month?: $'))
 clothing = float(input('How much do you spend on clothing each month?: $'))
 
-
+# original file only had one space before defining and calling functions on line 14
 # processing
 def func_budget_percent():
     # get percent
@@ -30,14 +30,14 @@ def func_budget_percent():
     print('Utilities takes up', format(utilities_budget, ',.2f'), '% of your monthly budget.')
     print('Clothing takes up', format(clothing_budget, ',.2f'), '% of your monthly budget.')
 
-    
+# original file only had one space before defining and calling functions on line 32    
 def func_take_home_pay():
     # difference for take home pay
     take_home_pay = (income - (housing + food + transportation + phone + utilities + clothing))
     # print take home pay
     print('You have $', format(take_home_pay, ',.2f'), 'left from your income after paying these monthly expenses.')
 
-    
+# original file only had one space before defining and calling functions on line 39   
 # output budget percent and take home pay
 func_budget_percent()
 func_take_home_pay()
