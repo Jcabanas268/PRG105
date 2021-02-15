@@ -5,17 +5,18 @@ input total for the day
 
 -data
 sel_day
-sel_week
 get_day_sales
 day_total
 week_total
 avg_per_day
+sale_total
 
 -processing
 sel_day = input('Sun-Sat \n')
 get_day_sale = flt(input('$: '))
 while sel_day == Sun-Sat #input valid
   sun-sat_sales = get_day_sale
+  sale_total += get_day_sale
   sel_day = input('Sun-Sat \n')
 *7
 day_total *7 = week_total #add days 
