@@ -2,7 +2,6 @@
 # data var
 total_sales = 0
 
-
 # processing
 for day in ('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'):       # run through list
     get_day_sales = float(input('Enter day sales for ' + day + ': $ '))         # input sale for day
