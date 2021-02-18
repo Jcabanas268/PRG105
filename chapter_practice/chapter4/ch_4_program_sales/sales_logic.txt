@@ -1,0 +1,26 @@
+Sales logic
+
+select for day 
+input total for the day
+
+-data
+sel_day
+sel_week
+get_day_sales
+day_total
+week_total
+avg_per_day
+
+-processing
+sel_day = input('Sun-Sat \n')
+get_day_sale = flt(input('$: '))
+while sel_day == Sun-Sat #input valid
+  sun-sat_sales = get_day_sale
+  sel_day = input('Sun-Sat \n')
+*7
+day_total *7 = week_total #add days 
+week_total / 7 #for avg
+
+-output
+total sales for the week
+avg sales per day
