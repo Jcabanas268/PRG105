@@ -1,85 +1,53 @@
-def main():
-    get_int = int(input('Enter a whole number between 20 and 100: '))
-    val_num(get_int)
-    print(get_int)
-    print(val_num(get_int))
+# 5.2 Practice Program
 
 
-def val_num(g_int):
-    valid_int = g_int * 12
-    print(g_int)
-    print(g_int * 2)
-    print(valid_int)
+def main():     # main func
+    number = int(input('Enter a whole number between 20 and 100: '))        # get integer between 20 & 100
+    valid_num = validate(number)        # validates integer in range
+    two = div_by_2(valid_num)       # set value for two w/ div_by_2 function
+    three = div_by_3(valid_num)     # set value for two w/ div_by_3 function
+    five = div_by_5(valid_num)      # set value for two w/ div_by_5 function
+    output(valid_num, two, three, five)     # set values for output
+    print()
+    main()      # repeat main function
 
 
-main()
-'''
-*None?
-
-def main():
-    get_num()
-    val_num()
-    div2_num()
-    div3_num()
-    div5_num()
-
-
-def get_num():
-    number = int(input('Enter a whole number between 20 and 100: '))
-    val_num(number)
-    div2_num(number)
-    div3_num(number)
-    div5_num(number)
-'''
+def validate(num):      # validates integer in range = valid_num
+    if 20 <= num <= 101:        # returns num when in range
+        return num      # return as valid_num
+    else:       # when num is not in range
+        while num < 20 or num > 100:        # print when num is in not valid range
+            print('Invalid number.')
+            num = int(input('Enter a whole number between 20 and 100: '))       # get new int
+            validate(num)       # validates int as new num
+            return num      # return as valid_num
 
 
-def get_num():
-    number = int(input('Enter a whole number between 20 and 100: '))
-    val_num(number)
-    div2_num(number)
-
-def val_num(number):
-    while 20 < number < 100:
-        return number
-    while 20 > number > 100:
-        print('Enter a valid number')
-        get_num()
+def div_by_2(num):      # divide num by 2
+    if num % 2 == 0:        # check float value with 0 remainder
+        return 'is divisible by 2'
+    else:           # remainder not 0
+        return 'is not divisible by 2'
 
 
-def div2_num(number):
-    div_by_2 = number / 2
+def div_by_3(num):      # divide bum by 3
+    if num % 3 == 0:        # check float value with 0 remainder
+        return 'is divisible by 3'
+    else:           # remainder not 0
+        return 'is not divisible by 3'
 
 
+def div_by_5(num):      # divide bum by 5
+    if num % 5 == 0:        # check float value with 0 remainder
+        return 'is divisible by 5'
+    else:           # remainder not 0
+        return 'is not divisible by 5'
 
 
-'''
-        val_num()
-        div2_num()
-        div3_num()
-        div5_num()
+def output(num, div2, div3, div5):      # output values
+    print(num, div2)        # output valid_num w/ div_by_2 value
+    print(num, div3)        # output valid_num w/ div_by_3 value
+    print(num, div5)        # output valid_num w/ div_by_5 value
 
 
-def val_num(get_num()):
-    while 20 < get_num() < 100:
-        valid = get_num()
-        return valid
-    while 20 > number > 100:
-        print('Enter a valid number')
-        get_num()
-
-
-def div2_num(number):
-    div_by_2 = number / 2
-    print(number)
-
-
-def div3_num(number):
-    div_by_3 = number / 3
-    print(number)
-
-
-def div5_num(number):
-    div_by_5 = number / 5
-    print(number)
-
-'''
+main()      # call main
