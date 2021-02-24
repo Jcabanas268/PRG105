@@ -42,14 +42,30 @@ print("=" * 10, "Section 5.3 design a program using functions", "=" * 10)
 
 
 def main():
-    knock_joke()
+    line1()
+    line2()
+    line3()
+    line4()
+    line5()
 
 
-def knock_joke():
+def line1():
     print('Knock knock')
+
+
+def line2():
     print('Who\'s there?')
+
+
+def line3():
     print('Hatch')
+
+
+def line4():
     print('Hatch who?')
+
+
+def line5():
     print('Bless you.')
 
 
@@ -160,7 +176,7 @@ def main6():
 
 def bmi(weight_pounds, height_inches):
     # BMI = (Weight in Pounds / (Height in inches x Height in inches)) x 703
-    patient_bmi =  (weight_pounds / (height_inches * height_inches)) * 703
+    patient_bmi = (weight_pounds / (height_inches * height_inches)) * 703
     # TODO send the patient_bmi value back to main6
     return patient_bmi
 
