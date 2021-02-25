@@ -38,13 +38,17 @@ def func_shape(num):
 
 def func_area(num):
     if num == 1:
-        return func_rectangle
+        num = func_rectangle()
+        return num
     elif num == 2:
-        return func_triangle
+        num = func_triangle()
+        return num
     elif num == 3:
-        return func_square
+        num = func_square()
+        return num
     elif num == 4:
-        return func_circle
+        num = func_circle()
+        return num
 
 
 def func_rectangle():
