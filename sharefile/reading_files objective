@@ -1,0 +1,47 @@
+Lesson Objective(s):
+Read data in from a file
+Strip the new line symbol
+Process the data
+
+Assignment:
+Open the file sales_totalsPreview the document in read mode
+Read in all the lines using a loop
+Strip the newline symbol and convert each line to a float
+Add each number to the running total
+Count the number of lines
+Format and display each number
+Outside of the loop format and display the total, the count, and the average
+Do this in functions
+
+Sample output:
+13,420.22
+45,229.32
+35,223.22
+29,302.20
+95,893.21
+94,721.94
+84,720.32
+84,793.02
+10,394.21
+30,233.33
+23,432.32
+Total:                                  547,363.31
+Number of entries:                        11
+Average:                             49,760.30
+
+Assignment Requirements: 
+Hand in Pseudocode to plan your project. Use the following format:
+
+Data:
+
+Data provided
+
+User input 
+
+Processing: 
+
+What calculations does your program need to perform?
+
+Output:
+
+What will your output to the screen be?
