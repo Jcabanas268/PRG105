@@ -5,7 +5,6 @@
     Your file should compile error free
     Submit your completed file
 """
-import os
 
 # TODO 6.1 Introduction to File Input and Output
 print("=" * 10, "Section 6.1 file input and output", "=" * 10)
@@ -44,7 +43,9 @@ line3 = states_data.readline()
 states_data.close()
 
 # 4) Print the three variables
-print(line1, line2, line3)
+print(line1)
+print(line2)
+print(line3)
 
 # TODO 6.2 Using loops to process files
 print("=" * 10, "Section 6.2 use loops to process files", "=" * 10)
@@ -60,9 +61,9 @@ counter = 0
 # -- and add 1 to counter for each line
 lines = states_file.readline()
 for lines in states_file:
-    counter += 1
     print(lines)
-    print(counter)
+    counter += 1
+print('There are ' + str(counter) + ' lines.')
 
 # 3) Close the file
 states_file.close()
@@ -84,10 +85,7 @@ for count in range(1, books + 1):
     print('Book number:', count)
     title = input('Enter book title: ')
     author = input('Enter book author: ')
-    books_file.write(title + '\n')
-    books_file.write(author + '\n')
-    print('Title:', title, '\nAuthor:', author)
-    print()
+    books_file.write(title + ', ' + author + '\n')
 
 # 3) Close the file
 books_file.close()
@@ -107,5 +105,5 @@ try:
     superheros.close()
 
 # 4) Create an except IOError, that uses a print statement telling the user that the file doesn't exist
-except FileNotFoundError:
+except IOError:
     print('Error! File not found: ' + filename)
