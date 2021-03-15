@@ -53,8 +53,9 @@ else:
 print("=" * 10, "Section 7.5 list methods and functions", "=" * 10)
 # 1) Use append() to append the last three months of the year to the list months.
 months = list(["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept"])
-last_months = list(["Oct", "Nov", "Dec"])
-months.append(last_months)
+months.append("Oct")
+months.append("Nov")
+months.append("Dec")
 print(months)
 
 # 2) Get the index of "May" from the months list and print it on screen
@@ -63,12 +64,14 @@ print(month_may)
 
 # 3) Sort list3 from exercise 7.2 and print the results on screen
 list3.sort()
+print(list3)
 
 # 4) Reverse the order of list3
 list3.reverse()
 
 # 5) Delete the number 5 from list3 and print the list(remember we reversed the list)
-del list3[5]
+locate_5 = list3.index(5)
+del list3[locate_5]
 print(list3)
 
 # 6) Print the maximum value from list 3
@@ -80,7 +83,8 @@ print("=" * 10, "Section 7.6 copying lists", "=" * 10)
 # Copy the list months to the variable months_of_the_year
 # Print the values in months_of_the_year
 months_of_the_year = months
-print(months_of_the_year)
+for month in months_of_the_year:
+    print(month)
 
 
 # TODO 7.7 Processing lists
@@ -92,31 +96,30 @@ for item in list3:
 print('List 3 total: ', total_list3)
 
 # 2) Get the average of values in list3 and print the results
-num_list3 = len(list3)
-print('List 3 average: ', format((total_list3 / num_list3), ',.2f'))
+print('List 3 average: ', format((total_list3 / len(list3)), ',.2f'))
 
 # 3) Open the file states.txt in read mode,
 # -- read the contents of the file into the list states_list
 # -- print the contents of states_list on screen
 file_doc = open('states.txt', 'r')
-states_list = file_doc.readline()
+states_list = file_doc.readlines()
+for states in states_list:
+    print(states)
 file_doc.close()
-print(states_list)
-
 
 # TODO 7.8 Two-Dimensional Lists
 print("=" * 10, "Section 7.8 two-dimensional lists", "=" * 10)
 # 1) Create a new two dimensional list that has the months of the year
 #     and the days in each month during a non leap year
 #     For example, the first entry should be: January, 31
-lthist = [['January', 31], ['February', 28], ['March', 31], ['April', 30], ['May', 31], ['June', 30], ['July', 31],
+month_days = [['January', 31], ['February', 28], ['March', 31], ['April', 30], ['May', 31], ['June', 30], ['July', 31],
           ['August', 31], ['September', 30], ['October', 31], ['November', 30], ['December', 31]]
 
 # 2) Print the contents of the entire list
-print(lthist)
+print(month_days)
 
 # 3) Print just the values for index 3,0 and 3,1
-print(lthist[3][0], lthist[3][1])
+print(month_days[3][0], month_days[3][1])
 
 
 # TODO 7.9 Tuples
