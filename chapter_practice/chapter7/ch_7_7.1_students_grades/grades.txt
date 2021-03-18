@@ -1,0 +1,6 @@
+'Albert Gnome', 'A'
+'Barbra Spade', 'A'
+'Camren Shears', 'A'
+'Timothy Spatula', 'B'
+'Diane Glover', 'B'
+'Edgar Edger', 'A+'
