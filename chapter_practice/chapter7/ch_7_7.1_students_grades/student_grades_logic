@@ -1,0 +1,16 @@
+# Progam to input student & grade, print two dimensional list, write list to grades.txt
+
+# value
+grade.txt
+get num of students = input
+initialize student_grade list
+get student name
+get sutdent grade
+
+# process
+append name and grade to list
+write name and grade to grades.txt
+
+#output
+two dimentional list of student and grade
+list into grade.txt
