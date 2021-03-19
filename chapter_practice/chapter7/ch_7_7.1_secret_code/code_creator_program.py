@@ -4,6 +4,7 @@
 import random                                               # import random module
 
 phrase = input('Enter phrase: ')                            # get phrase from user
+random.seed(2)                                              # set seed constant for random numbers
 random_generator = random.sample(range(0, 99), 67)          # create scramble integer list to parallel w/ character
 character = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T",
              "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n",
