@@ -19,10 +19,10 @@ def main():                                                     # define main()
             strip_line = int(line.rstrip())                     # value to strip \n and hold line as integer
             for digit in range(len(random_generator)):          # for loop range of random_generator
                 if strip_line == random_generator[digit]:       # if item in cypher.txt matches item in
-                                                                # random_generator index
+                                                                # random_generator indexed list
                     decoder += character[digit]                 # compile corresponding index of character to
-                                                                # random_generator match index
-        open_doc.close()
+                                                                # random_generator matched index
+        open_doc.close()                                        # close cypher.txt
         print('Message:', decoder)                              # output plain message
     except Exception as error:                                  # exception to print error, resume main()
         print("Error: ", error)                                 # output error message
