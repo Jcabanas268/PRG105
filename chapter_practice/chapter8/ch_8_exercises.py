@@ -16,10 +16,10 @@ for ch in name:
 print(characters)
 
 # 2) Use the index value to access and print the capital s in Schmidt from the variable name
-print(characters[24])
+print(name[24])
 
 # 3) Use a negative index value to print the letters from the last name "Schmidt" in name
-print(name[-7] + name[-6] + name[-5] + name[-4] + name[-3] + name[-2] + name[-1])
+print(name[-7:])
 
 
 # TODO 8.2 String slicing
@@ -52,17 +52,6 @@ if name.isdigit():
 else:
     print("name contains a number:", is_digit)
 
-"""
-char_digit = 0
-char_ndigit = 0
-for char in name:
-    if char.isdigit():
-        char_digit += 1
-    else:
-        char_ndigit += 1
-print("digit:", char_digit, "notdigit:", char_ndigit)
-"""
-
 # 4) Test to see if number contains a number, print the result
 number = "42"
 if number.isdigit():
@@ -71,15 +60,9 @@ if number.isdigit():
 else:
     print("number contains a number:", is_digit)
 
-
 # 5) Search for "J" in name, replace with "j" (lower case), print the result
 #    Note: You can assign this to a variable first, or just print
-name_update = ""
-for ln in name:
-    if ln == "J":
-        ln = ln.lower()
-    name_update += ln
-name = name_update
+name_update = name.replace("J", "j")
 print(name_update)
 
 # 6) Split the string name into the variable name_list, replace the "", print the result
