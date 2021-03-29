@@ -1,5 +1,8 @@
 """
-Program accepts a phrase and returns the acronym.
+Gets phrase from user
+Splits phrase to list
+Compiles first letters as upper case of each item in list adds a period after each letter
+Output the acronym on screen
 """
 
 
