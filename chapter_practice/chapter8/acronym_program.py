@@ -9,6 +9,7 @@ Output the acronym on screen
 def main():             # define main function
     again = True        # set repeat again value as true
     while again:        # run line while again is true
+        print("This program converts a phrase to its acronym.")
         user_phrase = input("Enter phrase: ")       # get phrase from user
         users_phrase_split = user_phrase.split()        # split phrase to list
         acronym = ""        # initialise acronym compiler
