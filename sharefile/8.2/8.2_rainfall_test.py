@@ -12,7 +12,7 @@ def main():
     for ln in read_lines:
         ln_rstrip = ln.rstrip('\n')
         ln_rain_value = (ln_rstrip.split())[1]
-        print(ln_rain_value)
+        print("ln_rain_value", ln_rain_value)
         ln_rain_value_split = ln_rain_value.split(".")
         whole_place += int(ln_rain_value_split[0])
         print(int(ln_rain_value_split[0]))
