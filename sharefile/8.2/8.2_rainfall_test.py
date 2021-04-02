@@ -7,12 +7,19 @@ def main():
     file_doc = open('rainfall-totals.txt', 'r')
     read_lines = file_doc.readlines()
     total_rainfall = 0
+    whole_place = 0
+    dec_place = 0
     for ln in read_lines:
         ln_rstrip = ln.rstrip('\n')
         ln_rain_value = (ln_rstrip.split())[1]
         print(ln_rain_value)
-        total_rainfall += ln_rain_value
-    print(total_rainfall)
+        ln_rain_value_split = ln_rain_value.split(".")
+        whole_place += int(ln_rain_value_split[0])
+        print(int(ln_rain_value_split[0]))
+        print(ln_rain_value_split[1])   # have to convert to int
+    print("whole_place", whole_place)   # correct
+    print("dec_place", dec_place)       # incorrect
+    print("total_rainfall", total_rainfall)
 
 
 main()
