@@ -21,28 +21,28 @@ def main():
             print()
             print('Error! ' + '\"' + steps + '\"' + ' value is invalid.\n')     # prompt value is invalid
             print('Please enter step count, value must be a number.')       # prompt value must be a number
-            main()
+            main()         # loop to main
 
-    for key, vl in dict_day_step.items():
-        if vl > max_step:
-            max_step = vl
-        if vl < min_step:
-            min_step = vl
+    for key, vl in dict_day_step.items():       # for key and value in dictionary
+        if vl > max_step:       # if value is greater than max step
+            max_step = vl       # set max step as value
+        if vl < min_step:       # if value is less than min step
+            min_step = vl       # set min step as value
     print()
-    print('Your total steps for the week: ' + format(step_count, ',.0f'))
-    print('Your average step for the week: ' + format(step_count / len(days), ',.1f') + '\n')
+    print('Your total steps for the week: ' + format(step_count, ',.0f'))       # output total steps for the week
+    print('Your average step for the week: ' + format(step_count / len(days), ',.1f') + '\n')   # output average steps for the week
 
-    print('Days with max step of ' + str(max_step) + ':')
-    for val in dict_day_step:
-        if max_step == dict_day_step[val]:
-            print(val)
+    print('Days with max step of ' + str(max_step) + ':')       # print max step for following days
+    for val in dict_day_step:       # for day in dictionary
+        if max_step == dict_day_step[val]:      # if max step equals day value in dictionary
+            print(val)      # print day of week
     print()
 
-    print('Days with min step of ' + str(min_step) + ':')
-    for val in dict_day_step:
-        if min_step == dict_day_step[val]:
-            print(val)
-    quit()
+    print('Days with min step of ' + str(min_step) + ':')       # for day in dictionary
+    for val in dict_day_step:           # for day in dictionary
+        if min_step == dict_day_step[val]:      # if min step equals day value in dictionary
+            print(val)      # print day of week
+    quit()      # end program
 
 
-main()
+main()          # call main
