@@ -6,13 +6,12 @@ score is evaluated, and displayed.
 """
 
 import random           # import random functions
-
 random_number = random.sample(range(0, 11), 11)         # generate random series for place key
-
 numbers_share = {0: 'shunya', 1: 'ek', 2: 'do', 3: 'teen', 4: 'chaar', 5: 'paanch',
                  6: 'che', 7: 'saat', 8: 'aath', 9: 'nau', 10: 'das'}           # set dictionary key, val
+letter_grade = {11: "A", 10: "A-", 9: "B-", 8: "C-", 7: "D", 6: "F",
+                5: "F", 4: "F", 3: "F", 2: "F", 1: "F", 0: "F"}        # set dictionary point key, letter value
 score = 0       # set score
-
 print("Enter a digit which corresponds to the number in Hindi\n")       # prompt
 
 for channel in random_number:       # for random series number
@@ -30,8 +29,6 @@ for channel in random_number:       # for random series number
                 else:           # if random number do not match user input
                     print("\t" + "Incorrect!: " + val + " is " + str(channel) + ".\n")      # prompt guess is incorrect
 
-letter_grade = {11: "A", 10: "A-", 9: "B-", 8: "C-", 7: "D", 6: "F",
-                5: "F", 4: "F", 3: "F", 2: "F", 1: "F", 0: "F"}        # set dictionary point key, letter value
 for points, letter in letter_grade.items():         # for point and letter in letter_grade dictionary
     if points == score:         # if point key match score value
         print("Your final score is: " + str(score) + "/11")         # display score
